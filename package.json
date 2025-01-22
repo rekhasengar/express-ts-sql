@@ -21,7 +21,8 @@
         "format": "prettier --write src/**/*.ts",
         "db:migrate": "yarn run build  && ./script/migrate.sh",
         "db:seed": "yarn run build  && ./script/seed.sh",
-        "db:create": "sequelize-cli db:create"
+        "db:create": "sequelize-cli db:create",
+        "test2": "sequelize"
     },
     "author": "MindPath – Intelligent Solutions <engineering@mindpathtech.com>",
     "homepage": "",
