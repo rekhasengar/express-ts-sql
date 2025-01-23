@@ -87,7 +87,7 @@ export default class CustomError extends Error {
   }
 
   public static getForbiddenError(message: string): CustomError {
-    return new CustomError(HttpStatusCode.FORBIDDEN, HTTP_STATUS_MESSAGE.BAD_REQUEST, [{ messages: [message] }]);
+    return new CustomError(HttpStatusCode.FORBIDDEN, HTTP_STATUS_MESSAGE.FORBIDDEN, [{ messages: [message] }]);
   }
 
   public static getConflictError(message: string): CustomError {
